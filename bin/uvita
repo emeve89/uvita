@@ -2,6 +2,7 @@
 
 require 'uvita'
 require 'thor'
+require 'generators/base'
 require 'generators/uvita_generators'
 require 'generators/skeleton_generator'
 require 'generators/file_generator'

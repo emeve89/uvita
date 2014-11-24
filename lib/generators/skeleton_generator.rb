@@ -1,11 +1,7 @@
 module Generators
-  class SkeletonGenerator
+  class SkeletonGenerator < Base
 
     FOLDERS = %w(/test /lib /public /lib/models /lib/views).freeze
-
-    def initialize(root_dir)
-      @root_dir = Dir::pwd + %(/#{root_dir})
-    end
 
     def generate
       return unless create_dir(root_dir)
@@ -13,8 +9,6 @@ module Generators
     end
 
     private
-
-    attr_reader :root_dir
 
     def create_sub_dirs
       FOLDERS.each do |folder|

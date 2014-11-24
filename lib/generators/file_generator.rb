@@ -1,5 +1,5 @@
 module Generators
-  class FileGenerator
+  class FileGenerator < Base
 
     FILES = %w(/config.ru /Gemfile /Rakefile).freeze
 
@@ -12,10 +12,6 @@ module Generators
         File.new(root_dir + file, "w")
       end
     end
-
-    private
-
-    attr_reader :root_dir
 
   end
 end
