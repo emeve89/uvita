@@ -4,6 +4,7 @@ module Generators
     desc "new [API NAME]", "Scaffold a Grape API"
     def new(api_name)
       Generators::SkeletonGenerator.new(api_name).generate
+      Generators::FileGenerator.new(api_name).generate
     end
   end
 end
