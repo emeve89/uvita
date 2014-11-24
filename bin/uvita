@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'uvita'
+require 'thor'
+require 'generators/uvita_generators'
+
+UvitaGenerators.start
