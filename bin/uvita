@@ -3,5 +3,6 @@
 require 'uvita'
 require 'thor'
 require 'generators/uvita_generators'
+require 'generators/skeleton_generator'
 
-UvitaGenerators.start
+Generators::UvitaGenerators.start
